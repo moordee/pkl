@@ -1,0 +1,337 @@
+/* custom.css */
+
+/* =========================================
+   1. FONTS & IMPORTS
+   ========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* =========================================
+   2. ROOT VARIABLES (The Engine)
+   Overriding these affects: Layout, Grid, Utilities, Typography
+   ========================================= */
+:root {
+  /* Color Palette */
+  --bs-primary: #880a0a;
+  --bs-primary-rgb: 136, 10, 10;
+  --bs-secondary: #000000;
+  --bs-secondary-rgb: 0, 0, 0;
+
+  /* Body & Text */
+  --bs-body-bg: #000000;
+  --bs-body-color: #ffffff;
+
+  /* Links */
+  --bs-link-color: #ffffff;
+  --bs-link-hover-color: #ffc3ad;
+  --bs-link-decoration: none;
+
+  /* Borders (Make them subtle red or white for visibility) */
+  --bs-border-color: #880a0a;
+  --bs-border-color-translucent: rgba(136, 10, 10, 0.5);
+
+  /* Fonts */
+  --bs-font-sans-serif: "Hanken Grotesk", sans-serif;
+  --bs-body-font-family: var(--bs-font-sans-serif);
+}
+
+/* =========================================
+   3. GLOBAL LAYOUT & CONTENT
+   (Reboot, Typography, Images, Tables)
+   ========================================= */
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+/* Link Overrides */
+a {
+  color: var(--bs-link-color);
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+a:hover {
+  color: var(--bs-link-hover-color);
+}
+
+/* Global Text Hover Effect */
+/* Applies to links and interactive elements */
+a:hover,
+.btn:hover,
+.nav-link:hover,
+.list-group-item:hover {
+  color: #f1ffb4 !important;
+}
+
+/* Typography Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-primary); /* Making headers pop in Red */
+  font-weight: 700;
+}
+
+/* Tables */
+.table {
+  --bs-table-color: #ffffff;
+  --bs-table-bg: #000000;
+  --bs-table-border-color: #880a0a;
+  --bs-table-striped-bg: #1a0202; /* Very dark red for stripe */
+  --bs-table-hover-bg: #880a0a;
+  --bs-table-hover-color: #f1ffb4;
+}
+
+/* =========================================
+   4. FORMS
+   (Input, Select, Checks, Range)
+   Overrides default white backgrounds
+   ========================================= */
+.form-control,
+.form-select {
+  background-color: #111111; /* Slightly lighter than black for contrast */
+  border: 1px solid var(--bs-primary);
+  color: #ffffff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background-color: #000000;
+  border-color: #ffc3ad; /* Link hover color for focus ring */
+  color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgba(136, 10, 10, 0.25);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Checks & Radios */
+.form-check-input {
+  background-color: #000;
+  border-color: var(--bs-primary);
+}
+.form-check-input:checked {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+/* =========================================
+   5. COMPONENTS
+   (Card, Modal, Navbar, Accordion, etc.)
+   ========================================= */
+
+/* Buttons */
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-bg: #660606; /* Darker red on hover */
+  --bs-btn-hover-border-color: #660606;
+  --bs-btn-color: #ffffff;
+}
+
+/* Cards */
+.card {
+  --bs-card-bg: #0a0a0a; /* Deep gray/black */
+  --bs-card-border-color: var(--bs-primary);
+  --bs-card-cap-bg: #880a0a;
+  --bs-card-color: #ffffff;
+}
+
+/* Modals */
+.modal-content {
+  background-color: #000000;
+  border: 1px solid var(--bs-primary);
+  color: #ffffff;
+}
+.modal-header,
+.modal-footer {
+  border-color: var(--bs-primary);
+}
+.btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%); /* Turns the close X white */
+}
+
+/* Dropdowns */
+.dropdown-menu {
+  background-color: var(--bs-primary);
+  border: 1px solid #ffc3ad;
+}
+.dropdown-item {
+  color: #ffffff;
+}
+.dropdown-item:hover {
+  background-color: #000000;
+  color: #f1ffb4; /* Text Hover Color */
+}
+
+/* Accordion */
+.accordion-item {
+  background-color: #000000;
+  border-color: var(--bs-primary);
+  color: #ffffff;
+}
+.accordion-button {
+  background-color: #1a0202;
+  color: #ffffff;
+}
+.accordion-button:not(.collapsed) {
+  background-color: var(--bs-primary);
+  color: #ffffff;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+/* Navbars */
+.navbar {
+  background-color: var(--bs-primary) !important;
+  /* Or use bg-black depending on preference, assuming primary here */
+}
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+/* List Groups */
+.list-group-item {
+  background-color: #000000;
+  border-color: var(--bs-primary);
+  color: #ffffff;
+}
+.list-group-item.active {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+/* Pagination */
+.page-link {
+  background-color: #000000;
+  border-color: var(--bs-primary);
+  color: #ffffff;
+}
+.page-link:hover {
+  background-color: var(--bs-primary);
+  color: #f1ffb4;
+}
+.page-item.active .page-link {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+
+/* Toasts */
+.toast {
+  background-color: #000000;
+  border: 1px solid var(--bs-primary);
+  color: #ffffff;
+}
+.toast-header {
+  background-color: var(--bs-primary);
+  color: #ffffff;
+  border-bottom: 1px solid #000;
+}
+
+/* =========================================
+   6. HELPERS & UTILITIES
+   (Colors, Backgrounds, Borders)
+   ========================================= */
+
+/* Background overrides for utility classes to match theme */
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+.bg-secondary {
+  background-color: var(--bs-secondary) !important;
+}
+.bg-light {
+  background-color: #cccccc !important;
+  color: #000 !important;
+} /* Inverting light */
+.bg-dark {
+  background-color: #000000 !important;
+}
+
+/* Text Utilities */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+.text-muted {
+  color: #aaaaaa !important;
+} /* Light gray for visibility on black */
+
+/* Border Utilities */
+.border-primary {
+  border-color: var(--bs-primary) !important;
+}
+
+/* --- FINAL FIXED TABLE OVERRIDES FOR BORDERS --- */
+
+/* Base Table Overrides to enforce border radius globally */
+.table {
+  /* Ensures the outermost container gets the rounded corners */
+  border-radius: 0.5rem;
+  overflow: hidden; /* Important: Ensures content/borders respect the border-radius */
+  border-collapse: separate; /* Required for border-radius to work on <table> */
+}
+
+/* Primary Table: Red BG, White Text, Black Borders */
+.table-primary {
+  --bs-table-bg: #880a0a;
+  --bs-table-color: #ffffff;
+  --bs-table-border-color: #000000; /* Black Border Variable */
+  /* ... other variables remain the same ... */
+
+  /* Force Outer Border and Rounded Corners */
+  border: 1px solid var(--bs-table-border-color) !important;
+}
+
+/* Secondary Table: Black BG, White Text, Red Borders */
+.table-secondary {
+  --bs-table-bg: #000000;
+  --bs-table-color: #ffffff;
+  --bs-table-border-color: #880a0a; /* Red Border Variable */
+  /* ... other variables remain the same ... */
+
+  /* Force Outer Border and Rounded Corners */
+  border: 1px solid var(--bs-table-border-color) !important;
+}
+
+/* Target Inner Borders (Cell Lines) with high specificity */
+/* This ensures <td> and <th> elements use the custom border color */
+.table-primary > :not(caption) > * > * {
+  border-color: #000000 !important; /* Black Lines */
+}
+
+.table-secondary > :not(caption) > * > * {
+  border-color: #880a0a !important; /* Red Lines */
+}
+
+/* --- FINAL FIX FOR INNER TABLE LINES (Cell Borders) --- */
+
+/* Ensures all inner cells (th, td) for the primary table have black borders */
+.table-primary th,
+.table-primary td {
+  border: 1px solid #000000 !important; /* Black lines */
+}
+
+/* Ensures all inner cells (th, td) for the secondary table have red borders */
+.table-secondary th,
+.table-secondary td {
+  border: 1px solid #880a0a !important; /* Red lines */
+}
+/* --- PROGRESS BAR REMAINDER OVERRIDE --- */
+
+.progress {
+  /* Override the default background color for the entire track/remainder */
+  background-color: #ffffff !important; /* Forces the remainder of the bar to white */
+
+  /* Optional: Use your secondary color for a subtle border */
+  border: 1px solid var(--bs-secondary);
+
+  /* Ensure rounded corners if you want them to match other components */
+  border-radius: 0.5rem;
+}
+
+.progress-bar {
+  /* Ensure the actual progress bar part retains the primary color */
+  background-color: var(--bs-primary);
+}

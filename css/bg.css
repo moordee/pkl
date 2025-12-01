@@ -1,0 +1,25 @@
+body {
+  background: #000000;
+  background: -webkit-linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 30, 30, 1) 38%,
+    rgba(143, 28, 28, 1) 68%,
+    rgba(136, 10, 10, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 30, 30, 1) 38%,
+    rgba(143, 28, 28, 1) 68%,
+    rgba(136, 10, 10, 1) 100%
+  );
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(102, 30, 30, 1) 38%,
+    rgba(143, 28, 28, 1) 68%,
+    rgba(136, 10, 10, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#880A0A", GradientType=0);
+}
