@@ -49,8 +49,17 @@ a {
   text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
-a:hover {
-  color: var(--bs-link-hover-color);
+p:hover,
+li:hover,
+h:hover,
+span:hover,
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+tr:hover {
+  color: #f1ffb4;
 }
 
 /* Global Text Hover Effect */
@@ -59,7 +68,7 @@ a:hover,
 .btn:hover,
 .nav-link:hover,
 .list-group-item:hover {
-  color: #f1ffb4 !important;
+  color: #ffc3ad !important;
 }
 
 /* Typography Headings */
@@ -137,6 +146,20 @@ h6 {
   --bs-card-border-color: var(--bs-primary);
   --bs-card-cap-bg: #880a0a;
   --bs-card-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  border-radius: 0.375rem;
+}
+
+/* Left Sidebar Card */
+.col-lg-4 .card {
+  margin-top: 1rem;
+  border-radius: 0.375rem;
+}
+
+/* Right Sidebar Card */
+.col-lg-8 .card {
+  border-radius: 0.375rem;
 }
 
 /* Modals */

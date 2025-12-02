@@ -23,6 +23,7 @@
     <link href="css/custom.css" rel="stylesheet" />
     <link href="css/bg.css" rel="stylesheet" />
     <link href="css/stacking.css" rel="stylesheet" />
+    <link href="css/animation.css" rel="stylesheet" />
 
     <style>
       /* Language progress bars */
@@ -34,48 +35,66 @@
   </head>
   <body class="bg-dark">
     <div class="container-fluid py-4">
-      <div class="row g-3">
-        <!-- LEFT SIDEBAR -->
-        <div class="col-12 col-lg-4">
-          <div class="card border-0 bg-dark text-white h-100">
-            <div class="card-body p-4">
-              <!-- Profile Picture -->
-              <div class="bg-primary rounded-4 p-4 mb-3 position-relative">
-                <div
-                  class="d-flex align-items-center justify-content-center mx-auto"
-                  style="width: 180px; height: 180px"
-                >
-                  <img
-                    src="assets/img/6154699293953035178.jpg"
-                    alt="A woman with red lipstick and black-marine blue field uniform"
-                    class="rounded-circle"
+      <header>
+        <div class="card text-white bg-primary my-sm-2 my-md-4">
+          <div class="card-body">
+            <div class="row justify-content-evenly">
+              <div class="col-sm-3 me-auto">
+                <div class="bg-primary rounded-4 p-2 my-3 position-relative">
+                  <div
+                    class="d-flex align-items-center justify-content-center mx-auto"
                     style="width: 180px; height: 180px"
-                  />
+                  >
+                    <img
+                      src="assets/img/6154699293953035178.jpg"
+                      alt="A woman with red lipstick and black-marine blue field uniform"
+                      class="rounded-circle"
+                      style="width: 180px; height: 180px"
+                    />
+                  </div>
                 </div>
-                <div class="text-white mb-4">
+              </div>
+              <div class="col-sm-9 p-5 my-2">
+                <div class="text-white justify-content-evenly mb-4">
                   <h1 class="fw-bold text-white mb-1">Scientia Hashina</h1>
                   <h5 class="fw-normal text-white mb-1">
                     Student at SMK PGRI WLINGI
                   </h5>
                   <p class="small text-white mb-0">
-                    Beru, Wlingi, Blitar Regency, East Java, Indonesia |
+                    Beru, Wlingi, Blitar Regency, East Java, Indonesia|
                     srsshashina@gmail.com | +62 858-1975-0469
                   </p>
                 </div>
               </div>
-
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="row g-3">
+        <!-- LEFT SIDEBAR -->
+        <div class="col-12 col-lg-4 mt-sm-1">
+          <div class="card border-0 bg-dark text-white h-80">
+            <div class="card-body p-4">
               <!-- Skill Section -->
               <div class="mb-3">
                 <div class="bg-primary text-white px-3 py-2 rounded-3 mb-3">
                   <h5 class="mb-0 text-white fw-bold">Skill</h5>
                 </div>
-                <ul class="text-white ps-3">
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
+                <ul class="text-white">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript Basics</li>
+                  <li>Python Basics</li>
+                  <li>MS Excel Basics</li>
+                  <li>UI/UX Design</li>
+                  <li>Basic Laravel</li>
+                  <li>Beginner Django</li>
+                  <li>GitHub Basics</li>
+                  <li>Video Editing</li>
+                  <li>Content Creation</li>
+                  <li>Project Management</li>
+                  <li>Communication</li>
+                  <li>Teamwork</li>
                 </ul>
               </div>
 
@@ -126,17 +145,41 @@
                 </div>
               </div>
 
+              <!-- Portfolio Section -->
+              <div class="mb-3">
+                <div class="bg-primary text-white px-3 py-2 rounded-3 mb-3">
+                  <h5 class="mb-0 text-white fw-bold">Portfolio</h5>
+                </div>
+                <p class="mb-1 text-white">
+                  <a
+                    href="https://www.canva.com/design/DAG2fqvbU3Q/iv0Qi1M0EIFVtxmAJGa4tg/edit?utm_content=DAG2fqvbU3Q&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                    target="_blank"
+                    >View Portfolio Here
+                  </a>
+                </p>
+              </div>
+
               <!-- Projects Section -->
               <div class="mb-3">
                 <div class="bg-primary text-white px-3 py-2 rounded-3 mb-3">
                   <h5 class="mb-0 text-white fw-bold">Projects</h5>
                 </div>
-                <div class="text-white">
-                  <p class="mb-1">Project</p>
-                  <p class="mb-1">Project</p>
-                  <p class="mb-1">Project</p>
-                  <p class="mb-1">Project</p>
-                </div>
+                <ul class="text-white">
+                  <li class="mb-1">
+                    <a
+                      href="https://moordee.github.io/time-capsule/"
+                      target="_blank"
+                      >Time Capsule - GitHub Pages
+                    </a>
+                  </li>
+                  <li class="mb-1">
+                    <a
+                      href="https://sites.google.com/view/scientia-hashina"
+                      target="_blank"
+                      >Personal Landing Page - Google Sites
+                    </a>
+                  </li>
+                </ul>
               </div>
 
               <!-- Hobby Section -->
@@ -144,14 +187,12 @@
                 <div class="bg-primary px-3 py-2 rounded-3 mb-3">
                   <h5 class="mb-0 text-white fw-bold">Hobby</h5>
                 </div>
-                <ul class="text-white ps-3">
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
-                  <li>Lorem</li>
+                <ul class="text-white">
+                  <li>Listening to Music</li>
+                  <li>Watching Norwegian Movie</li>
+                  <li>Watching The Late Show with Stephen Colbert</li>
+                  <li>Playing Mobile Games</li>
+                  <li>Travelling</li>
                 </ul>
               </div>
             </div>
@@ -160,7 +201,43 @@
 
         <!-- RIGHT CONTENT -->
         <div class="col-12 col-lg-8">
-          <div class="card border-0 bg-primary h-100">
+          <!--
+          <div class="card text-white bg-primary my-sm-2 my-md-4">
+            <div class="card-body">
+              <div class="row justify-content-evenly">
+                <div class="col-sm-3 me-auto">
+                  <div class="bg-primary rounded-4 p-4 mb-3 position-relative">
+                    <div
+                      class="d-flex align-items-center justify-content-center mx-auto"
+                      style="width: 180px; height: 180px"
+                    >
+                      <img
+                        src="assets/img/6154699293953035178.jpg"
+                        alt="A woman with red lipstick and black-marine blue field uniform"
+                        class="rounded-circle"
+                        style="width: 180px; height: 180px"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-9 p-5 my-2">
+                  <div class="text-white justify-content-evenly mb-4">
+                    <h1 class="fw-bold text-white mb-1">Scientia Hashina</h1>
+                    <h5 class="fw-normal text-white mb-1">
+                      Student at SMK PGRI WLINGI
+                    </h5>
+                    <p class="small text-white mb-0">
+                      Beru, Wlingi, Blitar Regency, East Java, Indonesia<br />
+                      srsshashina@gmail.com | +62 858-1975-0469
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          -->
+
+          <div class="card border-0 bg-primary mb-4">
             <div class="card-body p-4">
               <!-- Summary Section -->
               <div class="mb-4">
@@ -168,15 +245,17 @@
                   <h5 class="mb-0 fw-bold text-white">Summary</h5>
                 </div>
                 <p class="text-white">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-                  massa mi. Aliquam in hendrerit urna. Pellentesque sit amet
-                  sapien fringilla, mattis ligula consectetur, ultrices mauris.
-                  Maecenas vitae mattis tellus. Nullam quis imperdiet augue.
-                  Vestibulum auctor ornare leo, non suscipit magna interdum eu.
-                  Curabitur pellentesque nibh nibh, at maximus ante fermentum
-                  sit amet. Pellentesque commodo lacus at sodales sodales.
-                  Quisque sagittis orci et diam condimentum, vel euismod erat
-                  placerat. In iaculis arcu eros, eget tempus orci facilisis id.
+                  A student with a generalist mindset and a curiosity for how
+                  things work. Rather than sticking to just one niche, I enjoy
+                  building a broad skill set that ranges from web development
+                  (HTML, Laravel) to UI/UX design and content creation. My
+                  experience includes freelance journalism to teaching English,
+                  which has taught me how to adapt quickly to new challenges. I
+                  have earned Google Career Certificates in both Technical
+                  Support and UX Design, reflecting my wide range of interests.
+                  I aim for a role where I can apply my diverse background in
+                  technology, language, and media to create useful things and
+                  solve problems from different angles.
                 </p>
               </div>
 
@@ -204,7 +283,7 @@
                       </tr>
                       <tr class="">
                         <td scope="row">Date of birth:</td>
-                        <td>September 25 2006</td>
+                        <td>September 25th 2006</td>
                       </tr>
                       <tr class="">
                         <td scope="row">Height:</td>
@@ -233,14 +312,18 @@
                   <h5 class="mb-0 text-white fw-bold">Experiences</h5>
                 </div>
                 <ul class="text-white">
-                  <li>Lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
+                  <li>
+                    <strong>Field Work Practice</strong> - Havedev Cipta
+                    Teknologi (Present)
+                  </li>
+                  <li>
+                    <strong>Freelance Contributor Journalist</strong> - RT News
+                    (2024)
+                  </li>
+                  <li><strong>English Teacher</strong> - Private (2024)</li>
+                  <li>
+                    <strong>Content Creator</strong> - Sciehash (2019-2025)
+                  </li>
                 </ul>
               </div>
 
@@ -250,14 +333,24 @@
                   <h5 class="mb-0 text-white fw-bold">Certificate</h5>
                 </div>
                 <ul class="text-white">
-                  <li>Lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
+                  <li>
+                    <strong>Technical Support Fundametals</strong> - Google
+                    Career Certificates
+                  </li>
+                  <li>
+                    <strong>Foundations of User Experience (UX) Design</strong>
+                    - Google Career Certificates
+                  </li>
+                  <li>
+                    <strong>Start Writing Prompts Like a Pro</strong> - Google
+                    Career Certificates
+                  </li>
+                  <li>
+                    <strong>EF SET English Certificate (C1 Advanced)</strong>
+                  </li>
+                  <li>
+                    <strong>TOEIC iBT Listening & Reading (945)</strong> - ETS
+                  </li>
                 </ul>
               </div>
 
@@ -267,23 +360,21 @@
                   <h5 class="mb-0 text-white fw-bold">Education</h5>
                 </div>
                 <ul class="text-white">
-                  <li>Lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
-                  <li>lorem</li>
+                  <li><strong>SMK PGRI WLINGI</strong> - Present</li>
+                  <li><strong>MTsN 2 Tulungagung</strong> - 2022</li>
+                  <li><strong>MI Modern "SAKTI"</strong> - 2019</li>
+                  <li><strong>TK Kartika IV-28</strong> - 2013</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Footer Section -->
-      <div class="row mt-4">
+    <!-- Footer Section -->
+    <div class="container-fluid py-4 mt-5">
+      <div class="row">
         <div class="col-12">
           <div class="text-white text-center py-4 rounded-3">
             <!-- Social Links -->
@@ -296,7 +387,12 @@
                   height="24"
                   src="assets/icon/icons8-linkedin-50.png"
                 />
-                <a href="https://www.linkedin.com/in/scientia-hashina/"><span>LinkedIn</span></a>
+                <a
+                  class="animate-character"
+                  href="https://www.linkedin.com/in/scientia-hashina/"
+                  target="_blank"
+                  ><span>LinkedIn</span></a
+                >
               </div>
 
               <div class="d-flex align-items-center gap-2">
@@ -305,7 +401,12 @@
                   height="24"
                   src="assets/icon/icons8-github-50.png"
                 />
-                <a href="https://github.com/moordee/"><span>GitHub</span></a>
+                <a
+                  class="animate-character"
+                  href="https://github.com/moordee/"
+                  target="_blank"
+                  ><span>GitHub</span></a
+                >
               </div>
 
               <div class="d-flex align-items-center gap-2">
@@ -314,7 +415,12 @@
                   height="24"
                   src="assets/icon/icons8-google-100.png"
                 />
-                <a href="https://g.dev/scientia-hashina"><span>for Developers</span></a>
+                <a
+                  class="animate-character"
+                  href="https://g.dev/scientia-hashina"
+                  target="_blank"
+                  ><span>for Developers</span></a
+                >
               </div>
 
               <div class="d-flex align-items-center gap-2">
@@ -323,7 +429,12 @@
                   height="24"
                   src="assets/icon/icons8-figma-50.png"
                 />
-                <a href="https://www.figma.com/design/jYKqS9DNjJgnf0IGs0gCkH/CV---Tugas-PKL?node-id=0-1&t=eHmUmOfsYwzuZvli-1"><span>See Design</span></a>
+                <a
+                  class="animate-character"
+                  href="https://www.figma.com/design/jYKqS9DNjJgnf0IGs0gCkH/CV---Tugas-PKL?node-id=0-1&t=eHmUmOfsYwzuZvli-1"
+                  target="_blank"
+                  ><span>See Design</span></a
+                >
               </div>
 
               <div class="d-flex align-items-center gap-2">
@@ -332,7 +443,12 @@
                   height="24"
                   src="assets/icon/icons8-web-100.png"
                 />
-                <a href="https://moordee.github.io/cv/"><span>Page Link</span></a>
+                <a
+                  class="animate-character"
+                  href="https://moordee.github.io/pkl/cv.html"
+                  target="_blank"
+                  ><span>Page Link</span></a
+                >
               </div>
             </div>
 
@@ -344,6 +460,10 @@
     </div>
 
     <!-- Bootstrap 5 JS Bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6DQDk6jQmocTyUcoGzA1pUc6p/6HI1pcJn781rN0y+4F"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

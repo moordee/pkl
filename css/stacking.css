@@ -1,9 +1,9 @@
-/* --- CV Layout Overlap Fix --- */
+/* --- CV Layout Overflow Fix --- */
 
-/* 1. Establish Positioning Context */
+/* 1. Establish Positioning Context and prevent overflow */
 .cv-container {
     position: relative; 
-    /* The row itself becomes the reference point for absolute positioning */
+    overflow: hidden; /* Prevent children from overflowing */
 }
 
 /* 2. Position the Sidebar */
@@ -12,26 +12,9 @@
     min-height: 100vh;
 }
 
-/* 3. Position the Overlapping Element */
-.name-block {
-    /* Take the element out of the normal flow */
-    position: absolute;
-    
-    /* Move it leftward by an amount that causes the overlap. 
-       Adjust this 'left' value (e.g., 100px) based on your needs. */
-    left: -150px; 
-    
-    /* Align it vertically. You may need to tweak the 'top' value. */
-    top: 50px; 
-    
-    /* Ensure it sits on top of the sidebar */
-    z-index: 10;
-    
-    /* Add styling to match the image (e.g., width, padding, background) */
-    width: 400px; /* Make it wide enough to cover the overlap area */
-    padding: 10px 20px;
-    background-color: var(--bs-body-bg); /* Use the body black background */
-    color: var(--bs-body-color);         /* Use the white text color */
+/* 3. Prevent overflow on the main container */
+.container-fluid {
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
 
 /* Optional: Styling for the placeholder circle to prevent overlap issues */
